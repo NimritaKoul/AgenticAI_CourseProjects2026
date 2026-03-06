@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
+            if (targetId === '#') return;
             const target = document.querySelector(targetId);
             if (target) {
                 target.scrollIntoView({
@@ -42,65 +42,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mock Data for Teams
-    const mockTeams = [
-        {
-            id: 1,
-            name: "Team Alpha",
-            project: "Autonomous Code Reviewer Agent",
-            members: "Alice Johnson, Bob Smith, Charlie Lee",
-            methodology: "LLM + AST Parsing",
-            status: "Proposal Approved"
-        },
-        {
-            id: 2,
-            name: "Data Miners",
-            project: "Multi-Agent Data Synthesis Pipeline",
-            members: "David Kim, Eva Green",
-            methodology: "LangChain + RAG",
-            status: "In Progress"
-        },
-        {
-            id: 3,
-            name: "NeuroNavigators",
-            project: "Self-Improving Web Scraper",
-            members: "Frank Wright, Grace Hopper",
-            methodology: "AutoGPT Architecture",
-            status: "Proposal Approved"
-        },
-        {
-            id: 4,
-            name: "Agent Frameworks",
-            project: "Dynamic Task Delegation Protocol",
-            members: "Henry Ford, Isabel Allende, Jack Black",
-            methodology: "Hierarchical Agents",
-            status: "Awaiting Review"
-        }
-    ];
-
+    // Load Data from courseData globally defined in data.js
     const teamsContainer = document.getElementById('teams-container');
+    const deliverablesContainer = document.getElementById('deliverables-container');
 
-    if (teamsContainer) {
+    if (teamsContainer && typeof courseData !== 'undefined' && courseData.teams) {
         // Render Teams
-        mockTeams.forEach(team => {
+        courseData.teams.forEach(team => {
             const card = document.createElement('div');
             card.className = 'team-card';
-            
+
             let statusClass = 'status-pending';
             if (team.status.includes('Approved') || team.status.includes('Progress')) {
                 statusClass = 'status-active';
             }
 
+            const membersList = team.members.join(', ');
+
             card.innerHTML = `
                 <h3 class="team-name">${team.name}</h3>
-                <h4 class="project-title">${team.project}</h4>
-                <p class="members"><strong>Members:</strong> ${team.members}</p>
+                <h4 class="project-title">${team.project || 'TBD'}</h4>
+                <p class="members"><strong>Members:</strong> ${membersList}</p>
                 <div class="team-badges">
                     <span class="badge ${statusClass}">${team.status}</span>
-                    <span class="badge">${team.methodology}</span>
                 </div>
             `;
             teamsContainer.appendChild(card);
+        });
+    }
+
+    if (deliverablesContainer && typeof courseData !== 'undefined' && courseData.deliverables) {
+        // Render Deliverables
+        courseData.deliverables.forEach(item => {
+            const timelineItem = document.createElement('div');
+            timelineItem.className = 'timeline-item';
+
+            timelineItem.innerHTML = `
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card interactive">
+                    <h3>${item.title || 'Submission Due'}</h3>
+                    <p class="date">Due: ${item.date || 'TBD'}</p>
+                </div>
+            `;
+            deliverablesContainer.appendChild(timelineItem);
         });
     }
 
