@@ -88,6 +88,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const proposalsContainer = document.getElementById('proposals-container');
+
+    if (proposalsContainer && typeof courseData !== 'undefined' && courseData.proposals) {
+        // Render Proposals
+        courseData.proposals.forEach(prop => {
+            const propLink = document.createElement('a');
+            propLink.href = 'ProjectProposalDocuments/' + prop.file;
+            propLink.target = '_blank';
+            propLink.className = 'resource-card';
+
+            // Determine if PDF or DOCX
+            const isPdf = prop.file.toLowerCase().endsWith('.pdf');
+            const icon = isPdf ? '📄' : '📝';
+            const fileType = isPdf ? 'PDF' : 'DOCX';
+
+            propLink.innerHTML = `
+                <div class="resource-icon">${icon}</div>
+                <div class="resource-info">
+                    <h3>${prop.team} Proposal (${fileType})</h3>
+                    <p>Download</p>
+                </div>
+            `;
+            proposalsContainer.appendChild(propLink);
+        });
+    }
+
     // Simple intersection observer for scroll animations
     const observerOptions = {
         threshold: 0.1,
