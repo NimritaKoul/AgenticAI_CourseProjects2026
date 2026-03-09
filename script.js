@@ -113,7 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
             proposalsContainer.appendChild(propLink);
         });
     }
-
+    // Render Delayed Submissions
+    const delayedContainer = document.getElementById('delayed-submissions-container');
+    if (delayedContainer && typeof courseData !== 'undefined' && courseData.delayedSubmissions) {
+        courseData.delayedSubmissions.forEach(sub => {
+            const subCard = document.createElement('div');
+            subCard.className = 'resource-card';
+            subCard.innerHTML = `
+                <div class="resource-info">
+                    <h3>${sub.Name} (${sub.SRN})</h3>
+                    <p>${sub["Pending Submission Details"]} - Due: ${sub["Due Date"]} (${sub["Delayed by"]})</p>
+                </div>`;
+            delayedContainer.appendChild(subCard);
+        });
+    }
     // Simple intersection observer for scroll animations
     const observerOptions = {
         threshold: 0.1,
