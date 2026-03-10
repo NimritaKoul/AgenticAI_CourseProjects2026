@@ -29,7 +29,7 @@ const courseData = {
                 "Ruchika C Lal",
                 "Karthik J Ramoo",
                 "Jayashree G",
-                "Tanmay C JR23EA127"
+                "Tanmay C"
             ],
             "status": "In Progress"
         },
@@ -304,49 +304,31 @@ courseData.delayedSubmissions = [
         "SRN": "R23EA009",
         "Name": "ADITYA KANTI",
         "Pending Submission Details": "Project Proposal Document",
-        "Due Date": "2026-02-28",
-        "Delayed by": "9 Days Late"
+        "Due Date": "2026-02-28"
     },
     {
         "SRN": "R23EA013",
         "Name": "AKASH O P",
         "Pending Submission Details": "Project Proposal Document",
-        "Due Date": "2026-02-28",
-        "Delayed by": "9 Days Late"
+        "Due Date": "2026-02-28"
     },
     {
         "SRN": "R23EA037",
         "Name": "E DEEPIKA",
         "Pending Submission Details": "Project Proposal Document",
-        "Due Date": "2026-02-28",
-        "Delayed by": "9 Days Late"
+        "Due Date": "2026-02-28"
     },
     {
         "SRN": "R23EA045",
         "Name": "HAMSAVANI B M",
         "Pending Submission Details": "Project Proposal Document",
-        "Due Date": "2026-02-28",
-        "Delayed by": "9 Days Late"
+        "Due Date": "2026-02-28"
     },
     {
         "SRN": "R23EA056",
         "Name": "KEERTHANA HARISH",
         "Pending Submission Details": "Project Proposal Document",
-        "Due Date": "2026-02-28",
-        "Delayed by": "9 Days Late"
-    },
-    {
-        "SRN": "R23EA122",
-        "Name": "SRIRAM KUNDAPUR",
-        "Pending Submission Details": "Project Proposal Document",
-        "Due Date": "2026-02-28",
-        "Delayed by": "9 Days Late"
-    },
-    {
-        "SRN": "R23EP008",
-        "Name": "B T CHINMAYI",
-        "Pending Submission Details": "Project Proposal Document",
-        "Due Date": "2026-02-28",
-        "Delayed by": "9 Days Late"
+        "Due Date": "2026-02-28"       
     }
+    
 ];
