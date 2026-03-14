@@ -251,7 +251,7 @@ const courseData = {
 
         {
             "id": 22,
-            "name": "Team 2",
+            "name": "Team 22",
             "project": "Smart Energy Usage Optimizer ",
             "lead": "Hamsavadini",
             "members": [
