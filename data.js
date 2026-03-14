@@ -248,6 +248,23 @@ const courseData = {
             "status": "Submitted Proposal on 14th March 2026, Late by 15 days"
         }
 
+    
+    {
+            "id": 22,
+            "name": "Team 2",
+            "project": "Smart Energy Usage Optimizer ",
+            "lead": "Hamsavadini",
+            "members": [
+                "Hamsavadini",
+                "Keerthana H",
+                "Deepika E"
+            ],
+            "status": "Submitted Proposal on 14th March 2026, Late by 15 days"
+        }
+
+
+
+
     ],
     deliverables: [
         {
