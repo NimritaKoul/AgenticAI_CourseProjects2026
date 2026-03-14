@@ -235,6 +235,19 @@ const courseData = {
             ],
             "status": "In Progress"
         }
+    
+        {
+            "id": 21,
+            "name": "Team 21",
+            "project": "Agentic AI Crowd Safety Monitoring System using Computer Vision",
+            "lead": "Aditya Kani",
+            "members": [
+                "Aditya Kanti",
+                "AKASH O P"
+            ],
+            "status": "Submitted Proposal on 14th March 2026, Late by 15 days"
+        }
+
     ],
     deliverables: [
         {
@@ -295,39 +308,52 @@ courseData.proposals = [
     { "team": "Team 17", "file": "Team17_RealTimeAccelerationforMedicalImageProc_Shruthi Dhandapani.docx" },
     { "team": "Team 18", "file": "Team18_ZeroGate_Red_Teaming_Aastha Gobind.pdf" },
     { "team": "Team 19", "file": "Team19_NutrientDeficiency_MdSahilAbdul.pdf" },
-    { "team": "Team 20", "file": "Team20_WebScraper_Radhika.pdf" }
+    { "team": "Team 20", "file": "Team20_WebScraper_Radhika.pdf" },
+    { "team": "Team 21", "file": "Team21_CrowdSafety_Aditya Kanti.pdf" },
+    { "team": "Team 22", "file": "Team22_SmartEnergyUsageOptimize_Hamsavadini.docx" }
 ];
+
 
 
 courseData.delayedSubmissions = [
     {
         "SRN": "R23EA009",
         "Name": "ADITYA KANTI",
-        "Pending Submission Details": "Project Proposal Document",
+        "Submitted On": "14 March 2026, Late by 15 days",
         "Due Date": "2026-02-28"
     },
+
     {
         "SRN": "R23EA013",
         "Name": "AKASH O P",
-        "Pending Submission Details": "Project Proposal Document",
+        "Submitted On": "14 March 2026, Late by 15 days",
         "Due Date": "2026-02-28"
     },
+
+
     {
         "SRN": "R23EA037",
         "Name": "E DEEPIKA",
-        "Pending Submission Details": "Project Proposal Document",
+        "Submitted On": "14 March 2026, Late by 15 days",
+        "Due Date": "2026-02-28"
+    },
+
+    {
+        "SRN": "R23EA037",
+        "Name": "E DEEPIKA",
+        "Submitted On": "14 March 2026, Late by 15 days",
         "Due Date": "2026-02-28"
     },
     {
         "SRN": "R23EA045",
         "Name": "HAMSAVANI B M",
-        "Pending Submission Details": "Project Proposal Document",
+        "Submitted On": "14 March 2026, Late by 15 days",
         "Due Date": "2026-02-28"
     },
     {
         "SRN": "R23EA056",
         "Name": "KEERTHANA HARISH",
-        "Pending Submission Details": "Project Proposal Document",
+        "Submitted On": "14 March 2026, Late by 15 days",
         "Due Date": "2026-02-28"
     }
 
