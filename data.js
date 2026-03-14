@@ -346,15 +346,6 @@ courseData.delayedSubmissions = [
         "Submitted On": "14 March 2026, Late by 15 days",
         "Due Date": "2026-02-28"
     },
-
-
-    {
-        "SRN": "R23EA037",
-        "Name": "E DEEPIKA",
-        "Submitted On": "14 March 2026, Late by 15 days",
-        "Due Date": "2026-02-28"
-    },
-
     {
         "SRN": "R23EA037",
         "Name": "E DEEPIKA",

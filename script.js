@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             subCard.innerHTML = `
                 <div class="resource-info">
                     <h3>${sub.Name} (${sub.SRN})</h3>
-                    <p>${sub["Pending Submission Details"]} - Due: ${sub["Due Date"]} (${sub["Delayed by"]})</p>
+                    <p>${sub["Submitted On"]} - Due: ${sub["Due Date"]}</p>
                 </div>`;
             delayedContainer.appendChild(subCard);
         });
