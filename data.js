@@ -234,8 +234,8 @@ const courseData = {
                 "Meghana J K"
             ],
             "status": "In Progress"
-        }
-    
+        },
+
         {
             "id": 21,
             "name": "Team 21",
@@ -246,10 +246,10 @@ const courseData = {
                 "AKASH O P"
             ],
             "status": "Submitted Proposal on 14th March 2026, Late by 15 days"
-        }
+        },
 
-    
-    {
+
+        {
             "id": 22,
             "name": "Team 2",
             "project": "Smart Energy Usage Optimizer ",
